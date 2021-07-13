@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+}
+
+Nav {
+  
+  z-index: 0;
+  width: 100%;
+  background-color: #232931;
+  position: fixed;
+  top: 0;
+}
+
+/* navbar */
+
+.navbar {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  
+}
+
+.nav-header {
+  position: absolute;
+  float: left;
+  /* background: red; */
+  padding: 6.5px 10px;
+  color: #EEEEEE;
+  font-family: 'Cairo', sans-serif;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Cairo', sans-serif;
+  font-weight: 600;
+}
+
+
+.nav-links a { 
+  text-decoration: none;  
+  color: #EEEEEE;
+  padding: 14px 16px;
+  cursor: pointer;
+}
+
+.nav-links a:hover{
+  background-color: #4ECCA3;
+  color: #393E46;
+}
+
+.nav-links a:active{
+  background-color: #389777;
+  color: #393E46
+}
+
+
+
+
+/* Home page */
+
+.home-page {
+  height: 100vh;
+  width: 100%;
+  background-color: #393E46;
+  color: #EEEEEE;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-head {
+  height: 10vh;
+  width: 90vw;
+  margin-right: 10vw;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 30px;
+  font-family: 'Cairo', sans-serif;
+  /* background-color: pink; */
+}
+
+.home-img {
+  border-radius: 50%;
+  float: right;
+  padding-left: 10px;
+  /* background-color: purple */
+}
+
+.home-text {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  /* background: rgb(140, 140, 140); */
+  
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.contact-button {
+  background-color:#393E46;
+  border: #eeeeee;
+  cursor: pointer;
+}
+
+/* about page */
+
+.about-page {
+  height: 100%;
+  width: 100%;
+  padding-top: 5vh;
+  background-color: #393E46;
+  color: #EEEEEE;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-head {
+  background-color:#232931;
+  padding-left: 10px;
+  font-family: 'Cairo', sans-serif;
+}
+
+.about-content {
+  padding: 20px;
+}
+
+.about-interests {
+  padding: 20px;
+}
+
+.interests-head {
+  font-family: 'Cairo', sans-serif;
+  margin-top: 40px;
+}
+
+.interests-list {
+  list-style: none;
+}
+
+/* projects page */
+
+.projects-page {
+  min-height: 95vh;
+  width: 100%;
+  padding-top: 5vh;
+  background-color: #393E46;
+}
+
+.projects-head {
+  background-color:#232931;
+  padding-left: 10px;
+  color: #EEEEEE;
+  font-family: 'Cairo', sans-serif;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  color: #EEEEEE
+}
+
+.projects-container * {
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.projects-tic-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.projects-tic-desc {
+  width: 35vw;
+}
+
+.projects-zork-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.projects-zork-desc {
+  width: 35vw;
+}
+
+.projects-guess-container{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.projects-guess-desc {
+  width: 35vw;
+}
+
+.project-img {
+  width: 375px;
+}
+
+.project-img:hover {
+  animation-name: expand;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards
+}
+
+@keyframes expand {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.01);
+  }
+}
+
+.github-link {
+  padding: 4px 12px;
+  margin-left: 30px;
+  text-decoration: none;
+  font: 600 'Cairo', sans-serif; 
+  color: #EEEEEE;
+  background-color: #29a87e;
+  border-radius: 5px;
+  border-left: 2px solid #2f7e63;
+  border-right: 2px solid #2f7e63;
+  border-top: 2px solid #1f5341;
+  border-bottom: 2px solid #1f5341;
+}
+
+.github-link:hover {
+  background-color: #2f7e63;
+  border-left: 2px solid #1f5341;
+  border-right: 2px solid #1f5341;
+}
+
+.github-link:active {
+  background-color: #296d55;
+  border-left: 2px solid #1f5341;
+  border-right: 2px solid #1f5341;
+}
+
+
+/* work page */
+
+.work-page {
+  min-height: 95vh;
+  width: 100%;
+  padding-top: 5vh;
+  background-color: #393E46;
+  color: #EEEEEE;
+}
+
+.work-head{
+  background-color:#232931;
+  padding-left: 10px;
+  font-family: 'Cairo', sans-serif;
+}
+
+.work-content {
+  padding: 20px;
+}
+
+.work-hist {
+  display: inline-block;
+  width: 70vw;
+}
+
+.work-hist section {
+  padding-top: 10px;
+}
+
+.work-hist h2 {
+  font-family: 'Cairo', sans-serif;
+}
+
+.work-hist h3 {
+  font-family: 'Cairo', sans-serif;
+}
+
+.work-hist h5 {
+  font-family: 'Cairo', sans-serif;
+}
+
+.work-hist p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.resume-download {
+  float: right;
+  padding: 20px;
+}
+
+.resume-img {
+  width: 200px;
+  float: right;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+/* contact form */
+
+.form-modal {
+  height: 40vh;
+  width: 60vh;
+  background: rgba (100, 100, 100, 0);
+  z-index: 0;
+  
+}
+
+.close-contact {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1px;
+}
+
+.close-contact-button {
+    background: #393E46;
+    border: 1px solid #393E46;
+    color: #EEEEEE;
+    cursor: pointer;
+}
+
+.close-contact-button:hover {
+    background: #232931;
+    border: 1px solid #1c2127;
+    color: #EEEEEE;
+}
+
+.close-contact-button:active {
+    background: #1c2127;
+    border: 1px solid #111418;
+    color: #EEEEEE;
+    
+}
+
+.contact-form {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 2fr 8fr 1fr;
+  gap: 1px;
+  grid-template-areas:
+    "name email"
+    "subject subject"
+    "message message"
+    "submit submit";
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #EEEEEE;
+  border: 0px;
+}
+
+.name {
+  grid-area: name;
+}
+
+.email {
+  grid-area: email;
+}
+
+.subject {
+  grid-area: subject;
+}
+
+.message {
+  grid-area: message;
+}
+
+.submit {
+    grid-area: submit;
+    cursor: pointer;
+}
+
+/* footer */
+
+.footer {
+  background-color: #4ECCA3;
+  width: 100%;
+  color: black
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+}
